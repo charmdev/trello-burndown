@@ -12,11 +12,14 @@ var options = require('optimist')
 var optionArgs = options.argv;
 global.settings = require('./settings');
 
-var required_trello = require('trello_ex');
+var required_trello = require('trello');
 var trello = new required_trello(global.settings.applicationKey, global.settings.userToken);
 
 trello.getBoards('me', function(error, boards) {
 	if (error) {
+		console.log(global.settings.applicationKey);
+		console.log(global.settings.userToken);
+
 		console.error(error);
 	} else {
 		for (var i = 0; i < boards.length; i++) {
