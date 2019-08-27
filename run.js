@@ -14,6 +14,7 @@ settings.configPath = path.join(settings.root, 'config');
 settings.templatePath = path.join(settings.root, 'templates');
 settings.sprintTemplatePath = path.join(settings.root, 'templates' + path.sep + settings.template);
 settings.homeTemplatePath = path.join(settings.root, 'templates' + path.sep + settings.home_template);
+settings.devstatsTemplatePath = path.join(settings.root, 'templates' + path.sep + settings.devstats_template);
 
 if (process.env.PORT) settings.port = process.env.PORT;
 
