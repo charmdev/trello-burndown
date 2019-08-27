@@ -64,7 +64,6 @@
 		Total estimate: {{statisticsSummary.totalEstimate}}<br/>
 		Open estimate: {{statisticsSummary.openEstimate}}<br/>
 		Total effort: {{statisticsSummary.effort}}<br/>
-		Dev stats: {{devStats}}
 	</p>
 
 	<h4>Dev Stats</h4>
