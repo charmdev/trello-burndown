@@ -69,7 +69,17 @@
 	<h4>Dev Stats</h4>
     <ul>
     	{{#devStats}}
-    	<li>{{stat}}</li>
+    	<li>
+    	    <p>
+            	Dev ID: {{devId}}<br/>
+            	Finished effort: {{stat.finishedEffort}}<br/>
+            	Finished estimate: {{stat.finishedEstimate}}<br/>
+            	Finished count: {{stat.finishedCount}}<br/>
+            	Total effort: {{stat.totalEffort}}<br/>
+            	Total estimate: {{stat.totalEstimate}}<br/>
+            	Total count: {{stat.totalCount}}<br/>
+            </p>
+    	</li>
     	{{/devStats}}
     </ul>
 
